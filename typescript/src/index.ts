@@ -1,8 +1,9 @@
-import express, { request, response } from 'express';
-import {helloWorld} from './routes';
+import express from 'express'
 
-const app = express();
+import { helloWorld } from './routes'
 
-app.get('/', helloWorld);
+const app = express()
 
-app.listen(3333);
+app.get('/', helloWorld)
+
+app.listen(3333)
